@@ -1,0 +1,8 @@
+[run]
+source = .
+omit = env/*
+    */migrations/*
+    */__init__.py
+
+# coverage run manage.py test
+# coverage report
