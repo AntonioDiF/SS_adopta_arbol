@@ -11,4 +11,4 @@ class Mutation(graphene.ObjectType):
     refresh_token = graphql_jwt.relay.Refresh.Field()
     delete_token_cookie = graphql_jwt.relay.DeleteJSONWebTokenCookie.Field()
 
-schema = graphene.Schema(query=Query, mutation=Mutation)
+schema = graphene.Schema(mutation=Mutation)
